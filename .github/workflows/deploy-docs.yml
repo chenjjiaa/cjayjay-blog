@@ -40,7 +40,8 @@ jobs:
 
       - name: 部署文档
         uses: JamesIves/github-pages-deploy-action@v4
-        env: GITHUB_TOKEN: ${{ secrets.CJJ_BLOG_TOKEN }} # secrets.XXX 是创建的 secret 名称
+        # secrets.XXX 是创建的 secret 名称
+        env: GITHUB_TOKEN: ${{ secrets.CJJ_BLOG_TOKEN }} 
         with:
           # 部署文档
           branch: blog-pages-v1 # 改到我们代码的分支
